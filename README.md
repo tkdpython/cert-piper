@@ -4,6 +4,12 @@ A command-line tool for displaying X.509 certificate information from piped inpu
 
 Pipe any PEM certificate file (or a base64-encoded certificate) into `cert-piper` and get a rich, colour-coded summary of every certificate in the stream — including validity, key details, SANs, fingerprints, and more.
 
+Requires **Python 3.6 or later**.
+
+> **Note for developers:** building from source requires Python 3.7+ because the
+> build toolchain (`setuptools >= 61`, `setuptools-scm >= 8`) does not run on
+> Python 3.6. Installing a pre-built wheel from PyPI works on Python 3.6+.
+
 ---
 
 ## Features
